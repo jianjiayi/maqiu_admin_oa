@@ -1,0 +1,52 @@
+.register{
+    color: rgba(0, 0, 0, .65);
+    background-color: rgba(240, 242, 245, 0.5);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    .formRegister{
+        width:380px;
+        margin:140px auto;
+        padding:20px;
+        background-color: rgba(240, 242, 245, 0);
+        .ant-form-item{
+            width:auto;
+        }
+        .control-flex2{
+            display:flex;
+            justify-content:space-between;
+            padding:0;
+            .codeNum{
+                flex:1;
+                margin-right:20px;
+            }
+        }
+    }
+    .footer{
+        z-index:999;
+    }
+}
+@media (max-width: 768px) {
+    .register{
+        position:absolute;
+        top:0;
+        left:0;
+        .formRegister{
+            position:relative;
+            top:16vh;
+            width: 80vw;
+            margin:0 auto;
+            padding:0;
+            background:rgba(240, 242, 245, 0);
+            .ant-form-item{
+                width:auto;
+            }
+        }
+        .footer{
+            height:80px;
+        }
+        .waveAnimation{
+            display:none;
+        }
+    }
+}

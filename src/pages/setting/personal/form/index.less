@@ -1,0 +1,53 @@
+.personal-editform{
+    .eadit-avatar{
+        display:flex;
+        align-items:flex-end;
+        margin-bottom:8px;
+        .avatar{
+            display: table;
+            width: 104px;
+            height: 104px;
+            margin-right: 20px;
+            text-align: center;
+            vertical-align: top;
+            background-color: #fafafa;
+            border: 1px dashed #d9d9d9;
+            border-radius: 4px;
+            -webkit-transition: border-color 0.3s ease;
+            transition: border-color 0.3s ease;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        
+    }
+    .control-flex2{
+        display:flex;
+        justify-content:space-between;
+        padding:0;
+        .code-box{
+            display:flex;
+            justify-content:space-between;
+            .code-input{
+                flex:1;
+                margin-right:10px;
+            }
+            .code-button{
+                flex:1;
+            }
+        }
+        
+    }
+    
+}
+@media (max-width: 768px) {
+    .personal-editform{
+        .eadit-avatar{
+            .avatar{
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}

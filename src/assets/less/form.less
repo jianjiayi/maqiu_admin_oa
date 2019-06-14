@@ -1,0 +1,97 @@
+.ant-form{
+    .ant-form-item{
+        width:600px;
+        display:flex;
+        align-items:flex-start;
+        .ant-form-item-label{
+            width:150px;
+            margin-right:10px;
+            label{
+                display:flex;
+                padding-left:10px;
+                justify-content:flex-end;
+                align-items:center;
+                height:32px;
+                line-height: 40px;
+            }
+            label::before{
+                margin-right:5px;
+                margin-left:-10px;
+            }
+        }
+        .ant-form-item-control-wrapper{
+            flex:1;
+            margin-right:30px;
+        }
+    }
+    .middle-flex-start{
+        align-items:flex-start;
+    }
+    .form-editor{
+        width:100%;
+    }
+    .submit-button{
+        margin-top:40px;
+        .ant-form-item-control-wrapper{
+            flex:6;
+            button{
+                width:50%;
+            }
+        }
+    }
+    .submit-button::before{
+        flex:2;
+    }
+    .editor{
+        flex:1;
+        width:80vw;
+    }
+}
+@media (max-width: 768px) {
+    .ant-form{
+        .ant-form-item{
+            width:100%;
+            display:flex;
+            .ant-form-item-label{
+                width:25%;
+                margin-right:10px;
+                padding:0;
+                label{
+                    justify-content:flex-start;
+                    padding:0 0px 0 10px;
+                }
+            }
+            .ant-form-item-control-wrapper{
+                margin-right:10px;
+            }
+        }
+        .middle-flex-start{
+            flex-direction: column;
+            border-top:1px dashed #e8e8e8;
+            padding-top:10px;
+            .ant-form-item-label{
+                label{
+                    justify-content:start;
+                    margin-bottom:10px;
+                }
+            }
+        }
+        
+        .submit-button{
+            .ant-form-item-control-wrapper{
+                flex:1;
+                margin-right:0;
+                button{
+                    width:100%;
+                }
+            }
+        }
+        .submit-button::before{
+            flex:0;
+        }
+        .editor{
+            flex:1;
+            width:100%;
+        }
+    }
+}

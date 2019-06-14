@@ -1,0 +1,72 @@
+.upload-cropper{
+    .upload-box{
+        display: table;
+        width: 104px;
+        height: 104px;
+        margin-right: 8px;
+        text-align: center;
+        vertical-align: top;
+        background-color: #fafafa;
+        border: 1px dashed #d9d9d9;
+        border-radius: 4px;
+        -webkit-transition: border-color 0.3s ease;
+        transition: border-color 0.3s ease;
+        .upload-span{
+            position:relative;
+            display: table-cell;
+            width: 100%;
+            height: 100%;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+            color: rgba(0, 0, 0, 0.65);
+            font-size: 14px;
+            font-variant: tabular-nums;
+            line-height: 1.5;
+            list-style: none;
+            .button{
+                width:100%;
+                height:100%;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+            }
+            input{
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                opacity:0;
+            }
+        }
+    }
+    
+}
+.cropperModal{
+    display:flex;
+    flex-direction:column;
+    .preview-button{
+        margin-top:30px;
+        .cropper-preview{
+            flex:1;
+            overflow:hidden;
+            border:1px solid #e8e8e8; 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .upload-cropper{
+        .upload-box{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .cropperModal{
+        .preview-button{
+            display:none;
+        }
+    }
+}

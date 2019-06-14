@@ -1,0 +1,29 @@
+.time-weather{
+    display:flex;
+    line-height:20px;
+    .time,
+    .weather{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin-right:40px;
+        span{
+            display:flex;
+            font-size:12px;
+            justify-content:center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .time-weather{
+        border-top:1px solid #e8e8e8; 
+        padding:5px 0;
+        .time,
+        .weather{
+            margin-right:10px;
+            margin-left:24px;
+        }
+    }
+}
