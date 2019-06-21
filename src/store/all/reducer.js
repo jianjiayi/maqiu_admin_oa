@@ -2,6 +2,9 @@ import { fromJS } from 'immutable'
 import * as constants from './constants'
 
 //添加默认值
+let siteInfo = sessionStorage.getItem('$siteInfo') ?
+    JSON.parse(sessionStorage.getItem('$siteInfo')) :
+    fromJS({});
 let userInfo = sessionStorage.getItem('$user') ?
     JSON.parse(sessionStorage.getItem('$user')) :
     fromJS({});
@@ -19,11 +22,16 @@ let navArrays = sessionStorage.getItem('$navArrays') ?
 let defaultState = fromJS({
     navArrays,
     userInfo,
+    siteInfo,
 })
 
 
 export default (state = defaultState, action) => {
     switch (action.type) {
+        //保存站点信息
+        case constants.SAVE_SITE_INFO:
+            sessionStorage.setItem('$siteInfo', JSON.stringify(action.siteInfo));
+            return state.set('siteInfo',action.siteInfo);
         //登陆成功
         case constants.LOGIN_IN_SUCCESS:
             sessionStorage.setItem('$user', JSON.stringify(action.userInfo));

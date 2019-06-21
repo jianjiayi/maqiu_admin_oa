@@ -148,6 +148,12 @@ class SliderMenu extends Component {
                 onOpenChange={this.openChange}
             >
                 {/* 生菜菜单 */}
+                <Menu.Item key='/home'>
+                    <Link to='/home' replace onClick={this.props.toggleDrawerVisible}>
+                        <Icon type='home' />
+                        <span>首页</span>
+                    </Link>
+                </Menu.Item>
                 {
                     renderMenu
                 }

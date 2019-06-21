@@ -122,8 +122,9 @@ class SortForm extends Component {
                                 ],
                             })(
                                 <Select placeholder="请选择所属区域">
-                                    <Option value="0">整站</Option>
-                                    <Option value="1">其他</Option>
+                                    <Option value="1">友情链接</Option>
+                                    <Option value="2">合作伙伴</Option>
+                                    <Option value="0">其他</Option>
                                 </Select>,
                             )
                         }

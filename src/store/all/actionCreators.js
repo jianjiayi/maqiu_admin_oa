@@ -1,6 +1,14 @@
 import { fromJS } from 'immutable'
 import * as constants from './constants'
 
+//保存站点信息
+export const save_siteInfo = (siteInfo) => {
+    return{
+        type:constants.SAVE_SITE_INFO,
+        userInfo:fromJS(siteInfo)
+    }
+};
+
 //登陆成功
 export const login_success = (userInfo) => {
     return{
@@ -16,6 +24,8 @@ export const login_out = () => {
         type:constants.LOGIN_OUT
     }
 };
+
+
 
 //设置面包屑
 export const navArrayPush=(newNav)=> {

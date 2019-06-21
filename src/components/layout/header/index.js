@@ -87,7 +87,7 @@ class MqHeader extends Component {
                         />
                     </div>
 
-                    <Notice></Notice>
+                    {/* <Notice></Notice> */}
 
                     {/* pc */}
                     <div className='right_menu'>
